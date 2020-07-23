@@ -1,0 +1,15 @@
+.chat-message {
+  display: inline-block;
+  color: #000;
+  background-color: #e9e9eb;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.name {
+  margin: 5px;
+  font-size: 15px;
+}

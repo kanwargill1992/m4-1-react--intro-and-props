@@ -1,16 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import Header from './Header';
-import ChatStream from './ChatStream';
-import Footer from './Footer';
+import Header from "./Header";
+import ChatStream from "./ChatStream";
+import Footer from "./Footer";
 
-import './App.css';
+import "./App.css";
 
-const App = (props) => {
+const App = ({ conversation, currentUser }) => {
   return (
-    <div className='wrapper'>
-      <Header />
-      <ChatStream />
+    <div className="wrapper">
+      <Header
+        participants={conversation.participants.filter(
+          (user) => user.username !== currentUser.username
+        )}
+      />
+      <ChatStream messages={conversation.messages} currentUser={currentUser} />
       <Footer />
     </div>
   );

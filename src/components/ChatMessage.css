@@ -1,0 +1,35 @@
+.chat-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chat-image {
+  height: 50x;
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: -70px;
+}
+
+.chat-message {
+  background-color: #e9e9eb;
+  width: 50%;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 60px;
+}
+
+.chat-name {
+  font-size: 14px;
+  margin-left: 60px;
+}
+
+.sent {
+  background-color: #1185f7;
+  float: right;
+  color: #fff;
+  width: 50%;
+  padding: 5px;
+  border-radius: 20px;
+  margin-left: 170px;
+}
